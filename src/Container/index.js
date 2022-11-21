@@ -2,7 +2,7 @@ import "./style.css";
 
 const Container = ({ children }) => (
   <main className="container">
-    {(children)}
+    {children}
   </main>
 );
 
