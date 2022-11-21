@@ -6,11 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Preview
 
-!["To do list in action"](images/animation3.gif)
+!["To do list in action"](public/animation3.gif)
 
 ## Demo
 
-[ToDoList](https://st4rkmano.github.io/toDoList/)
+[TodosReact](https://st4rkmano.github.io/todos-list-react/)
 
 ## Available Scripts
 
