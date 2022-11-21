@@ -1,0 +1,20 @@
+.section {
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.section__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .section__box {
+        flex-direction: column;
+    }
+}
+
+.section__header {
+    margin: 20px;
+    font-size: 20px;
+}
