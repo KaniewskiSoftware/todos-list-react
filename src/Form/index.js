@@ -1,13 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
-  const ref = useRef();
-
-  useEffect(()=>{
-    ref.current.focus();
-  })
+  const ref = useRef(null);
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -15,6 +11,7 @@ const Form = ({ addNewTask }) => {
       addNewTask(newTaskContent.trim());
     }
     setNewTaskContent("");
+    ref.current.focus();
   };
 
   return (
