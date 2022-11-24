@@ -7,9 +7,8 @@ import Header from "./Header";
 import Container from "./Container";
 
 const getLocalStorageTasks = () => {
-  const localStorageTasks = JSON.parse(localStorage.getItem("tasks"));
-  console.log(localStorageTasks);
-  return localStorageTasks ? localStorageTasks : [] ;
+  const localStorageTasks = localStorage.getItem("tasks");
+  return localStorageTasks ? JSON.parse(localStorageTasks) : [] ;
 }
 
 function App() {
