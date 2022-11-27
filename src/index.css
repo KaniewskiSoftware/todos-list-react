@@ -6,7 +6,8 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#root {
+  min-height: 100vh;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #ededed;
