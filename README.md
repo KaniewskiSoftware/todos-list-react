@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Preview
 
-!["To do list in action"](public/animation3.gif)
+!["To do list in action"](public/animation4.gif)
 
 ## Demo
 
