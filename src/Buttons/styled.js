@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonsContainer = styled.div`
+export const StyledButtons = styled.div`
   @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
     display: flex;
     flex-direction: column;

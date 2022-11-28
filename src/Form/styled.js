@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentCreator = styled.form`
+export const StyledForm = styled.form`
   display: flex;
   margin: 0;
   padding: 20px;
