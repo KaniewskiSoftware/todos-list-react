@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const SectionBox = styled.section`
+export const StyledSection = styled.section`
   margin: 10px 0;
   background-color: ${({theme})=> theme.color.white};
 `;
 
-export const TitleBox = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
 
@@ -14,7 +14,7 @@ export const TitleBox = styled.header`
   }
 `;
 
-export const Title = styled.h2`
+export const StyledTitle = styled.h2`
   margin: 20px;
   font-size: 20px;
 `;

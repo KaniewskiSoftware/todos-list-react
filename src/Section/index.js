@@ -1,13 +1,13 @@
-import { SectionBox, TitleBox, Title } from "./styled";
+import { StyledHeader, StyledSection, StyledSection, StyledTitle } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
-  <SectionBox>
-    <TitleBox>
-      <Title>{title}</Title>
+  <StyledSection>
+    <StyledHeader>
+      <StyledTitle>{title}</StyledTitle>
       {extraHeaderContent}
-    </TitleBox>
+    </StyledHeader>
     {body}
-  </SectionBox>
+  </StyledSection>
 );
 
 export default Section;

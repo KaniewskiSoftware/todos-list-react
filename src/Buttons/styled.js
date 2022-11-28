@@ -8,7 +8,7 @@ export const StyledButtons = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   padding: 20px;
   color: ${({theme})=> theme.color.blueLagoon};
   background-color: ${({theme})=> theme.color.white};

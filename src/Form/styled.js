@@ -11,13 +11,13 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const Input = styled.input`
+export const StyledInput = styled.input`
   flex-grow: 1;
   padding: 10px 20px;
   border: 1px solid ${({theme})=> theme.color.ashGrey};
 `;
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   border: none;
   margin-left: 20px;
   padding: 10px 20px;
