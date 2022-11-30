@@ -3,6 +3,7 @@
 ToDoList allows you to add newTasks, set them as done or undone and also remove each one of them, set all of them as done and toggle hide done tasks. The input is always clear and on focus when you add new task. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Functionality of the project is developed using [Redux](https://github.com/reduxjs/redux-toolkit).
 
 ## Preview
 
