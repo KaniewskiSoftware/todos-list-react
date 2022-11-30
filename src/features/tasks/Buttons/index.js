@@ -1,4 +1,4 @@
-import { StyledButtons, StyledButton} from "./styled";
+import { StyledButtons, StyledButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
