@@ -1,12 +1,12 @@
 # ToDo List
 
-ToDoList allows you to add newTasks, set them as done or undone and also remove each one of them. The input is always clear and on focus when you add new task.
+ToDoList allows you to add newTasks, set them as done or undone and also remove each one of them, set all of them as done and toggle hide done tasks. The input is always clear and on focus when you add new task. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Preview
 
-!["To do list in action"](public/animation4.gif)
+!["To do list in action"](animation5.gif)
 
 ## Demo
 
@@ -50,3 +50,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - CSS
 - JS
 - React
+- Redux
