@@ -24,6 +24,7 @@ export const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.color.blueLagoon};
   color: ${({ theme }) => theme.color.white};
   transition: background-color 0.5s, transform 1s;
+  cursor: pointer;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin-top: 20px;

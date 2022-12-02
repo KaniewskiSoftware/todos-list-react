@@ -1,13 +1,17 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { StyledButtons, StyledButton } from "../Buttons/styled";
-import { fetchExampleTasks } from "../tasksSlice";
+import { fetchExampleTasks, selectIsPending } from "../tasksSlice";
 
 const ExampleTasksButton = () => {
+  const isPending = useSelector(selectIsPending);
   const dispatch = useDispatch();
   return (
     <StyledButtons>
-      <StyledButton onClick={() => dispatch(fetchExampleTasks())}>
-        Pobierz przykładowe zadania
+      <StyledButton
+        onClick={() => dispatch(fetchExampleTasks())}
+        disabled={isPending}
+      >
+        {isPending ? "Ładowanie..." : "Pobierz przykładowe zadania"}
       </StyledButton>
     </StyledButtons>
   );

@@ -14,6 +14,7 @@ export const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.color.white};
   border: none;
   transition: color 0.5s;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(110%);
