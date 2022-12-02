@@ -6,12 +6,12 @@ import {
   selectHideDone,
   selectTasksByQuery,
 } from "../../tasksSlice";
+import searchQueryParamName from "../searchQueryParamName";
 import { List, Item, Content, Button } from "./styled";
 
 const TaskList = () => {
   const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const query = searchParams.get("szukaj");
+  const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
 
   const tasks = useSelector(state => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);

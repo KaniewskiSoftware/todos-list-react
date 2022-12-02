@@ -70,7 +70,7 @@ export const selectTasksByQuery = (state, query) => {
   }
 
   return selectTasks(state).filter(({ content }) =>
-    content.toUpperCase().includes(query.trim().toUpperCase)
+    content.toUpperCase().includes(query.trim().toUpperCase())
   );
 };
 
