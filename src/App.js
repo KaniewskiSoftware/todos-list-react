@@ -5,7 +5,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 
 const App = () => (
-  <HashRouter basename="/todos-list-react">
+  <HashRouter>
     <nav>
       <StyledNavList>
         <li>
