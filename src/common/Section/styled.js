@@ -8,6 +8,7 @@ export const StyledSection = styled.section`
 export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid ${({theme}) => theme.color.seashell};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-direction: column;

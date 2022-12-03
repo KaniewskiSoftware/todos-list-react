@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export const List = styled.ul`
   margin: 0;
   padding: 20px 20px 30px;
-  border-top: 2px solid ${({ theme }) => theme.color.seashell};
   list-style: none;
 `;
 
