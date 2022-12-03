@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   margin: 0;
@@ -29,6 +30,19 @@ export const Content = styled.span`
     css`
       text-decoration: line-through;
     `}
+`;
+
+export const TaskLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.blueLagoon};
+
+  &:visited {
+    color: ${({ theme }) => theme.color.black};
+  }
+
+  &:hover {
+    filter: brightness(110%);
+  }
 `;
 
 export const Button = styled.button`

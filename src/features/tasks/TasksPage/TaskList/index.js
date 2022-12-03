@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import {
   toggleTaskDone,
   removeTask,
@@ -7,7 +7,7 @@ import {
   selectTasksByQuery,
 } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
-import { List, Item, Content, Button } from "./styled";
+import { List, Item, Content, Button, TaskLink } from "./styled";
 
 const TaskList = () => {
   const location = useLocation();
@@ -26,7 +26,7 @@ const TaskList = () => {
             {task.done ? "✔" : ""}
           </Button>
           <Content done={task.done}>
-            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+            <TaskLink to={`/zadania/${task.id}`}>{task.content}</TaskLink>
           </Content>
           <Button
             remove
