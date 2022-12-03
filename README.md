@@ -7,7 +7,7 @@ Functionality of the project is developed using [Redux](https://github.com/redux
 
 ## Preview
 
-!["To do list in action"](animation5.gif)
+!["To do list in action"](animation6.gif)
 
 ## Demo
 
@@ -47,8 +47,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Technologies
 
+- React
+- Styled-Components
+- Redux
+- Redux-Saga
+- Redux-Router
+- JS
 - HTML
 - CSS
-- JS
-- React
-- Redux
