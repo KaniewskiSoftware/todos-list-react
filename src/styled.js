@@ -7,13 +7,13 @@ export const StyledNavList = styled.ul`
   margin: 0;
   padding: 20px;
   list-style: none;
-  background-color: ${({theme}) => theme.color.blueLagoon};
+  background-color: ${({ theme }) => theme.color.blueLagoon};
 `;
 
 export const StyledNavLink = styled(NavLink)`
   padding: 20px;
   font-size: 14px;
-  color: ${({theme}) => theme.color.white};
+  color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   &.active {
     font-weight: bold;

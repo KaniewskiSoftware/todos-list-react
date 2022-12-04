@@ -18,7 +18,7 @@ export const useReplaceQueryParameter = () => {
       ? searchParams.delete(key)
       : searchParams.set(key, value);
 
-    const newSearch = searchParams.toString()
+    const newSearch = searchParams.toString();
     history.push(`${location.pathname}?${newSearch}`);
   };
 };

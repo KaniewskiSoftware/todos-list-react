@@ -13,7 +13,7 @@ const Search = () => {
     replaceQueryParameter({
       key: searchQueryParamName,
       value: target.value.trim() !== "" ? target.value : undefined,
-    })
+    });
   };
 
   return (
