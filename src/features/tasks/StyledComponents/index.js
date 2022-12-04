@@ -7,13 +7,13 @@ export const StyledInput = styled.input`
 `;
 
 export const StyledForm = styled.form`
-display: flex;
-margin: 0;
-padding: 20px;
+  display: flex;
+  margin: 0;
+  padding: 20px;
 
-@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-  flex-direction: column;
-}
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledButtons = styled.div`

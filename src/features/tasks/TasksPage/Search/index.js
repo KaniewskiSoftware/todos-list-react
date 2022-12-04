@@ -17,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <StyledForm as="div">
+    <StyledForm>
       <StyledInput
         placeholder="Filtruj zadania"
         value={query || ""}

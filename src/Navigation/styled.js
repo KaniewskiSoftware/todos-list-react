@@ -15,7 +15,12 @@ export const StyledNavLink = styled(NavLink)`
   font-size: 14px;
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
+  transition: color .3s;
   &.active {
     font-weight: bold;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.color.black};
   }
 `;
