@@ -11,7 +11,7 @@ Functionality of the project is developed using [Redux](https://github.com/redux
 
 ## Demo
 
-[TodosReact](https://st4rkmano.github.io/todos-list-react/)
+[TodosReact](https://kaniewskisoftware.github.io/todos-list-react/)
 
 ## Available Scripts
 
