@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "https://kaniewskisoftware.github.io/todos-list-react/",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.1",
+    "@redux-saga/core": "^1.2.2",
+    "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.4.0",
@@ -12,6 +13,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-router-dom": "^5.3.3",
+    "@types/redux-saga": "^0.10.5",
     "@types/styled-components": "^5.1.26",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",

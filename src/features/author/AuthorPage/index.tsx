@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../../../common/Container/index";
-import Header from "../../../common/Header/index";
-import Section from "../../../common/Section/index";
+import Container from "../../../common/Container";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
 import { Paragraph } from "./styled";
 
 function Author() {

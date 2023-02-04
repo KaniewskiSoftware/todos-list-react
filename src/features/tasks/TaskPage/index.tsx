@@ -1,3 +1,4 @@
+import React from "react";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
@@ -6,8 +7,11 @@ import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 import { Paragraph } from "./styled";
 
+type TaskParams = {
+    id: string;
+}
 function TaskPage() {
-  const { id } = useParams();
+  const { id } = useParams<TaskParams>();
   const task = useSelector((state) => getTaskById(state, id));
   return (
     <Container>
