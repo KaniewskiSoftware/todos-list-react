@@ -1,6 +1,13 @@
+import React from "react";
 import { StyledHeader, StyledSection, StyledTitle } from "./styled";
 
-const Section = ({ title, body, extraHeaderContent }) => (
+type Props = {
+    title: string;
+    body: React.ReactNode;
+    extraHeaderContent: React.ReactNode;
+}
+
+const Section = ({ title, body, extraHeaderContent }: Props) => (
   <StyledSection>
     <StyledHeader>
       <StyledTitle>{title}</StyledTitle>
