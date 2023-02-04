@@ -4,6 +4,6 @@ import {StyledMain} from "./styled";
 type ContainerProps = {
     children: React.ReactNode;
 }
-const Container: React.FC <ContainerProps> = ({children}) => <StyledMain>{children}</StyledMain>;
+const Container = ({children}: ContainerProps) => <StyledMain>{children}</StyledMain>;
 
 export default Container;
