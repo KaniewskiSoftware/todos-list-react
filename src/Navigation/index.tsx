@@ -1,3 +1,4 @@
+import React from "react";
 import { StyledNavList, StyledNavLink } from "./styled";
 
 const Navigation = () => (
