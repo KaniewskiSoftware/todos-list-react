@@ -68,17 +68,17 @@ export const {
 const selectTasksState = (state: RootState) => state.tasks;
 
 export const selectTasks = (state: RootState): Task[] | [] => selectTasksState(state).tasks;
-export const selectHideDone = (state: RootState) => selectTasksState(state).hideDone;
-export const selectAreTasksEmpty = (state: RootState) => selectTasks(state).length === 0;
-export const selectIsEveryTaskDone = (state: RootState) =>
+export const selectHideDone = (state: RootState): boolean=> selectTasksState(state).hideDone;
+export const selectAreTasksEmpty = (state: RootState): boolean => selectTasks(state).length === 0;
+export const selectIsEveryTaskDone = (state: RootState): boolean=>
     selectTasks(state).every(({done}) => done);
 
-export const selectIsPending = (state: RootState) => selectTasksState(state).pending;
+export const selectIsPending = (state: RootState): boolean => selectTasksState(state).pending;
 
 export const getTaskById = (state: RootState, taskId: string) =>
     selectTasks(state).find(({id}) => id === taskId);
 
-export const selectTasksByQuery = (state: RootState, query: string) => {
+export const selectTasksByQuery = (state: RootState, query: string | null): Task[] => {
     const tasks = selectTasks(state);
     if (!query || query.trim() === "") {
         return tasks;

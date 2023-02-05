@@ -1,11 +1,10 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { StyledButtons, StyledButton } from "../../StyledComponents";
 import { fetchExampleTasks, selectIsPending } from "../../tasksSlice";
-
+import { useAppDispatch, useAppSelector} from "../../../../hooks";
 const ExampleTasksButton = () => {
-  const isPending = useSelector(selectIsPending);
-  const dispatch = useDispatch();
+  const isPending = useAppSelector(selectIsPending);
+  const dispatch = useAppDispatch();
   return (
     <StyledButtons>
       <StyledButton

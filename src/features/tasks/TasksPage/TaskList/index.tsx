@@ -1,4 +1,5 @@
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useAppSelector, useAppDispatch } from "../../../../hooks"
 import { useLocation } from "react-router-dom";
 import {
   toggleTaskDone,
@@ -13,23 +14,23 @@ const TaskList = () => {
   const location = useLocation();
   const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
 
-  const tasks = useSelector(state => selectTasksByQuery(state, query));
-  const hideDone = useSelector(selectHideDone);
+  const tasks = useAppSelector(state => selectTasksByQuery(state, query));
+  const hideDone = useAppSelector(selectHideDone);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   return (
     <List className="tasks">
       {tasks.map((task) => (
         <Item key={task.id} hidden={task.done && hideDone}>
-          <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
+          <Button toggleDone={true} onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✔" : ""}
           </Button>
           <Content done={task.done}>
             <TaskLink to={`/zadania/${task.id}`}>{task.content}</TaskLink>
           </Content>
           <Button
-            remove
+            remove={true}
             className="tasks__button tasks__button--remove"
             onClick={() => dispatch(removeTask(task.id))}
           >
